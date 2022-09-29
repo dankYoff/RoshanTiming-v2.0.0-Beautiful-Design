@@ -34,16 +34,16 @@ body{
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
-
+/*text+image*/
 .about_right {
-  margin-top: 15%;
+  margin-top: 13%;
   margin-left: 750px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   text-align: center;
 }
-/*TEXT created by dankYoff*/
+/*TEXT*/
 .text_wrap {
   padding: 0 10px 0 0;
   flex: 0 1 30%;
