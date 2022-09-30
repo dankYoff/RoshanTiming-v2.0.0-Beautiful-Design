@@ -11,15 +11,22 @@
 <body>
 <!-- TIMER -->
     <p class="timer prevent-select" >{{ timer }}</p>
-<!--    <p class="timer prevent-select" >{{ d }}</p>-->
 
 
 <!-- CHAT(INPUT) -->
-    <div class="chat">
-      <label for="username">Chat:</label>
-      <input type="text" id="username" name="username" placeholder="Allies" required>
-      <input type="submit" id="btn" value="enter">
+<!--      <img class="chaticon" src="/static/dotachat.png" width="25" height="24">-->
+
+    <div style="margin-top: 300px;">
+        <div class="chat-text">(Allies):</div>
+        <div class="chat-text-end"> ▲  ▼</div>
+        <div class="chat-text-image"><img src="/static/dotachat.png" width="23" height="21" ></div>
+        <div class="chat-text-square"></div>
+        <div class="chat-text-ques">?</div>
+        <div><center><input type="text" class="chat-input" name="username" required></center></div>
+<!--      <input type="submit" id="btn" value="enter">-->
     </div>
+
+        <center><img style="margin-top: 10px;" src="/static/chat.png" width="808" height="44" ></center>
 
 <!-- RESULT -->
     <div class="result">
