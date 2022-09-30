@@ -22,14 +22,22 @@ body{
 
 
 
-
 /* CHAT */
+/* Allies */
 .chat-text{
   margin-left: 28.9%;
-  margin-top: 9px;
+  margin-top: 10px;
   position: absolute;
   font-size: 17px;
-  color: #faeac9;
+  color: #ffffff; /*color: faeac9*/
+}
+/* Type a message here. Example: 2641 2941-3241 */
+input::-webkit-input-placeholder {
+     color: black; /*Change the placeholder color*/
+     opacity: 0.5; /*Change the opacity between 0 and 1*/
+     color: #ffffff;
+     font-style: italic;
+     font-family: 'Roboto', sans-serif;
 }
 /* ▲ ▼ */
 .chat-text-end {
@@ -77,7 +85,7 @@ body{
   border-radius: 7px;
   background: linear-gradient(to left, rgba(169,208,113,0) 0%,rgba(0,0,0,1) 100%);
   font-size: 17px;
-  color: #faeac9;
+  color: #ffffff;
 }
 
 
