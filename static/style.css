@@ -25,7 +25,7 @@ body{
 
 /* CHAT */
 .chat-text{
-  margin-left: 549px;
+  margin-left: 28.9%;
   margin-top: 9px;
   position: absolute;
   font-size: 17px;
@@ -33,7 +33,7 @@ body{
 }
 /* ▲ ▼ */
 .chat-text-end {
-  margin-left: 1220px;
+  margin-left: 1227px;
   margin-top: 5px;
   position: absolute;
   font-size: 25px;
@@ -41,51 +41,44 @@ body{
 }
 /* 🙂 */
 .chat-text-image {
-  margin-left: 1280px;
+  margin-left: 1289px;
   margin-top: 9px;
   position: absolute;
   color: #adaeae;
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
 }
-/* ?*/
+/* ? */
 .chat-text-ques {
-  margin-left: 1320px;
+  margin-left: 1328px;
   margin-top: 6px;
   position: absolute;
   color: #adaeae;
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
 }
-
 /* Square */
 .chat-text-square {
   width: 33px;
   height: 33px;
   background: #222828;
-  margin-left: 1309px;
+  margin-left: 1317px;
   margin-top: 3px;
   position: absolute;
 }
-
 /*Chat design*/
 .chat-input {
-  width: 592px;
+  width: 582px;
   height: 36px;
   margin-top: 0px;
   padding-left: 78px;
-  padding-right: 130px;
+  padding-right: 140px;
   border: 1px solid #000000;
   border-radius: 7px;
   background: linear-gradient(to left, rgba(169,208,113,0) 0%,rgba(0,0,0,1) 100%);
   font-size: 17px;
   color: #faeac9;
 }
-
-
-/*  background-color: #202124;
-  color: #ffffff;*/
-/*  background: linear-gradient(70deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);*/
 
 
 
@@ -108,8 +101,8 @@ body{
 }
 /*text+image*/
 .about_right {
-  margin-top: 13%;
-  margin-left: 750px;
+  margin-top: 300px;
+  margin-left: 39%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
