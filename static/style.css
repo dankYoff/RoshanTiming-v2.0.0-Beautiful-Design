@@ -136,4 +136,20 @@ input::-webkit-input-placeholder {
   opacity: 0.8;
   transform: scale(1.1);
 }
+/*dynamic image*/
+@keyframes changewidth {
+  from {
+    transform: scale(0.7);
+  }
 
+  to {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+.move-image {
+  animation-duration: 6s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

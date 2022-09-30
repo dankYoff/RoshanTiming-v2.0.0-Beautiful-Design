@@ -34,6 +34,13 @@ int_max_rosh = a + 11
 c = 1
 d = str(str(aegis_a) + bb + ' ' + str(int_min_rosh) + bb + '-' + str(int_max_rosh) + bb)
 
+# Day/Night
+c = a // 5
+if c % 2 == 0:
+    k = "Ночь"
+else:
+    k = "День"
+
 @app.route('/')
 def index():
     return render_template('index.html', timer=timer, d=d)
