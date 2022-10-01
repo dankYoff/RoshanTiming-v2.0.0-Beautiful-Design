@@ -7,18 +7,48 @@
 }
 
 body{
-  background-color: #202124;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100% ;
+  }
+}
+
+
 
 
 
 
 /* TIMER */
 .timer {
+  margin: 30px;
   font-size: 45px;
   text-align: center;
 }
+
+
 
 
 
@@ -83,9 +113,11 @@ input::-webkit-input-placeholder {
   border: 1px solid #000000;
   border-radius: 7px;
   background: linear-gradient(to left, rgba(169,208,113,0) 0%,rgba(0,0,0,1) 100%);
-  font-size: 17px;
+  font-size: 14px;
   color: #ffffff;
 }
+
+
 
 
 
@@ -95,6 +127,8 @@ input::-webkit-input-placeholder {
   margin-top: 50px;
   text-align: center;
 }
+
+
 
 
 
@@ -115,13 +149,13 @@ input::-webkit-input-placeholder {
 /* text: created by dankY*/
 .text_wrap {
   position: absolute;
-  margin-top: 310px;
+  margin-top: 350px;
   margin-left: 750px;
   opacity: 0.2;
 }
 /*Image GitHub*/
 .img-profile {
-  margin-top: 300px;
+  margin-top: 340px;
   margin-left: 1030px;
   position: absolute;
   cursor: pointer;
@@ -153,3 +187,4 @@ input::-webkit-input-placeholder {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
