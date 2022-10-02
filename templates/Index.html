@@ -44,10 +44,28 @@
                 <p class="noselect">created by dankYoff</p>
             </div>
             <div class="img-profile">
-                <a href="https://github.com/dankYoff" target="_blank"><img class="move-image" src="/static/github.svg" width="50"></a>
+                <!-- <a href="https://github.com/dankYoff" target="_blank"><img class="move-image" src="/static/github.svg" width="50"></a> -->
+                <a class="img-profile" id="img-profile"><img class="move-image" src="/static/github.svg" width="50"/></a>
             </div>
         </div>
 
 
+
+
+        <script>
+        // Dont show link github
+        const imgProfile = document.querySelector('#img-profile');
+        const openUrl = (url) => {
+        window.open(url, '_blank');
+        };
+        imgProfile.addEventListener('click', () => {
+        openUrl('https://github.com/dankYoff');
+        });
+
+
+
+
+
+        </script>
 </body>
 </html>

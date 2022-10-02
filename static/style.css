@@ -161,9 +161,9 @@ input::-webkit-input-placeholder {
 }
 /*Image GitHub*/
 .img-profile {
-  margin-top: 340px;
-  margin-left: 1030px;
   position: absolute;
+  margin-top: 170px; 
+  margin-left: 520px;
   cursor: pointer;
 }
 
