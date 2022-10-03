@@ -10,15 +10,17 @@
 
 <body>
 
-
+<div class="hero">
     <!-- BACKGROUND VIDEO -->  
     <video autoplay loop playsinline muted class="back-video">
         <source src="/static/videotest1.mov" type="video/mp4">
     </video>
 
+
+
     <!-- TIMER -->
     
-    <div class="all-timer">
+    <div class="slow-show">
     
     <p id="random-timer" class="timer noselect"></p>
     <a><img src="/static/top.png" class="timer-image"/></a> 
@@ -29,7 +31,7 @@
     
 
         <!-- CHAT(INPUT) -->
-    <div style="margin-top: 330px; margin-left: 17px;">
+    <div class = "slow-show" style="margin-top: 330px; margin-left: 17px;">
         <div class="chat-text noselect">(Allies):</div>
         <div class="chat-text-end noselect">▲  ▼</div>
         <div class="chat-text-image noselect"><img src="/static/dotachat.png" width="23" height="21" ></div>
@@ -41,7 +43,7 @@
 
 
         <!-- created by dankYbat -->
-        <div>
+        <div class = "slow-show">
             <div class="text_wrap">
                 <p class="noselect">created by dankYoff</p>
             </div>
@@ -53,10 +55,13 @@
 
         <!-- CHAT(BUTTON + OUTPUT) -->
         <button id="myBtn" class="search" onclick="TimerCheck()"  style="visibility: hidden;">Do</button><!-- button -->
-        <center><p id="end1" ></p></center><!-- output correct-->
-        <center><p id="end2" ></p></center><!-- output incorrect-->
+        <center><p id="end1" class="noselect"></p></center><!-- output correct-->
+        <center><p id="end2" class="noselect"></p></center><!-- output incorrect-->
+        
+</div>
 
 
+        <!-- JS -->
         <script>
 
         // RANDOM TIME
