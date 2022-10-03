@@ -13,11 +13,12 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(59,59,59,0.3), rgba(59,59,59,0.3));
+  /* background-image: linear-gradient(rgba(59,59,59,0.3), rgba(59,59,59,0.3)); */
 }
 
-/* background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3)); */
 
+
+/* Background video */
 .back-video {
   position: absolute;
   right: 0;
@@ -46,11 +47,29 @@ body{
 
 
 /* TIMER */
+.all-timer {
+
+}
+/* Numbers timer */
 .timer {
-  margin: 30px;
-  font-size: 45px;
+  margin-top: 0px;
+  position: relative;
+  font-size: 60px;
   text-align: center;
   text-shadow: 3px 3px 3px #000;
+}
+/* Image Day/Night*/
+#imaaaga {
+  margin-top: -67px;
+ 
+}
+/* Timer background*/
+.timer-image {
+  margin-top: -133px;
+  position: absolute;
+  margin-left: 595px;
+  z-index: -1;
+
 }
 
 
@@ -121,50 +140,41 @@ input::-webkit-input-placeholder {
   font-size: 17px;
   color: #ffffff;
 }
-
-
 /* Chat output(result) */
 #end1 {
   margin-top: -30px;
   text-shadow: 3px 3px 3px #000;
   color: #16c60c;
-  
 }
-
 #end2 {
   margin-top: -20px;
   text-shadow: 3px 3px 3px #000;
   color:#f03a17!important;
-  
 }
+
+
+
+
+
+
+
+
 
 /* created by dankYbat  */
-/*Dont show*/
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-
-}
-
 /* text: created by dankY*/
 .text_wrap {
 
   position: fixed;
-  margin-top: 350px;
-  margin-left: 750px;
+  margin-top: 335px;
+  margin-left: 795px;
   opacity: 0.8;
   text-shadow: 3px 3px 3px #000;
 }
 /*Image GitHub*/
 .img-profile {
   position: fixed;
-  margin-top: 170px; 
-  margin-left: 520px;
+  margin-top: 160px; 
+  margin-left: 540px;
   cursor: pointer;
 }
 
@@ -179,3 +189,14 @@ input::-webkit-input-placeholder {
   transform: scale(1.1);
 }
 
+/*Dont show*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
