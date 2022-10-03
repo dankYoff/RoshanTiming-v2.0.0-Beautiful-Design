@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from random import randint
 
 app = Flask(__name__)
 
