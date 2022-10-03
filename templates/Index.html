@@ -18,9 +18,8 @@
 
     <!-- TIMER -->
     <div>
-        <p class="timer noselect" >{{ timer }}</p>
+        <p id="random-timer" class="timer noselect"></p>
     </div>
-
 
         <!-- CHAT(INPUT) -->
     <div style="margin-top: 350px; margin-left: 17px;">
@@ -29,14 +28,10 @@
         <div class="chat-text-image noselect"><img src="/static/dotachat.png" width="23" height="21" ></div>
         <div class="chat-text-square noselect"></div>
         <div class="chat-text-ques noselect">?</div>
-        <div><center><input type="text" class="chat-input" name="username" placeholder="Type a message here. Example: Time - 2141. Answer: 2641 2941-3241. GL 😉" autocomplete="off" required></center></div>
-<!--      <input type="submit" id="btn" value="enter">-->
+        <div><center><input type="text" id="searchTxt" class="chat-input" name="username" placeholder="Type a message here. Example: Time - 2141. Answer: 2641 2941-3241. GL 😉" autocomplete="off" required></center></div><!-- input chat -->
+
     </div>
 
-        <!-- RESULT -->
-        <!--    <div class="result">-->
-        <!--        Result : <input type="text" id="data" >-->
-        <!--    </div>-->
 
         <!-- created by dankYbat -->
         <div>
@@ -49,10 +44,54 @@
             </div>
         </div>
 
-
+        <!-- CHAT(BUTTON + OUTPUT) -->
+        <button id="myBtn" class="search" onclick="TimerCheck()"  style="visibility: hidden;">Do</button><!-- button -->
+        <center><p id="end1" ></p></center><!-- output correct-->
+        <center><p id="end2" ></p></center><!-- output incorrect-->
 
 
         <script>
+
+        // RANDOM TIME
+        function randomNumber(min, max) { 
+            return Math.floor(Math.random() * (max - min) + min);} 
+        var a = randomNumber(10, 51); 
+        var b = randomNumber(0, 60);
+            if (b <= 9) {
+                b = '0' + b;}
+        var response = a + ':' + b;
+        document.getElementById('random-timer').innerHTML = response;
+
+        // AEGIS TIMER
+        var aegis_a = a + 5 + '' + b;
+        var int_min_rosh = a + 8 + '' + b;
+        var int_max_rosh = a + 11 + '' + b;
+        var d = aegis_a + ' ' + int_min_rosh + '-' + int_max_rosh
+
+        //Check
+        function TimerCheck(){
+            var timer = "";
+            var result = document.getElementById("searchTxt").value;
+            if (d == result){
+                timer="Nice 😊";
+                document.getElementById('end1').innerHTML = timer;
+            }
+            else {
+                timer="Incorrect ❌:  " + d;
+                document.getElementById('end2').innerHTML = timer;
+            }
+            
+        }
+
+        //Enter
+        var input = document.getElementById("searchTxt");
+        input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+        }
+        });
+
         // Dont show link github
         const imgProfile = document.querySelector('#img-profile');
         const openUrl = (url) => {
