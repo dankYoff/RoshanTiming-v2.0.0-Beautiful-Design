@@ -13,9 +13,8 @@
 <!-- Start -->
 <div class="hero">
     
-    <!-- <embed src="/static/roshkill.mp3" loop="true" autostart="true" width="2" height="0"> -->
+
     <!-- BACKGROUND VIDEO -->  
-    <!-- <audio src="/static/roshkill.mp3" autoplay></audio> -->
     <video autoplay loop playsinline muted class="back-video">
         <source src="/static/videotest1.mov" type="video/mp4">
     </video>
@@ -23,7 +22,6 @@
 
 
     <!-- TIMER -->
-    
     <div class="slow-show">
     
     <p id="random-timer" class="timer noselect"></p>
@@ -46,6 +44,7 @@
     </div>
 
 
+
         <!-- created by dankYbat -->
         <div class = "slow-show">
             <div class="text_wrap">
@@ -57,6 +56,8 @@
             </div>
         </div>
 
+
+        
         <!-- CHAT(BUTTON + OUTPUT) -->
         <button id="myBtn" class="search" onclick="TimerCheck()"  style="visibility: hidden;">Do</button><!-- button -->
         <center><p id="end1" class="noselect"></p></center><!-- output correct-->
@@ -93,10 +94,13 @@
             if (d == result){
                 timer="Nice 😊";
                 document.getElementById('end1').innerHTML = '<span style="color:green;">' + timer + '</span>';
+                window.setTimeout(function(){location.reload()},1000) //refresh page
+                
             }
             else {
                 timer="Incorrect ❌:  " + d;
                 document.getElementById('end1').innerHTML = '<span style="color:red;">' + timer + '</span>';
+                
             }
             
             
