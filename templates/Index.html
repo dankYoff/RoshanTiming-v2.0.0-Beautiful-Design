@@ -10,12 +10,7 @@
 
 <body>
 
-
-
-    
-    
-    <source src="/static/roshkill.mp3" type="audio/mp3">
-
+<!-- Start -->
 <div class="hero">
     
     <!-- <embed src="/static/roshkill.mp3" loop="true" autostart="true" width="2" height="0"> -->
@@ -65,19 +60,13 @@
         <!-- CHAT(BUTTON + OUTPUT) -->
         <button id="myBtn" class="search" onclick="TimerCheck()"  style="visibility: hidden;">Do</button><!-- button -->
         <center><p id="end1" class="noselect"></p></center><!-- output correct-->
-        <center><p id="end2" class="noselect"></p></center><!-- output incorrect-->
+        <!-- <center><p id="end2" class="noselect"></p></center>output incorrect -->
         
 </div>
 
     
 
         <!-- JS -->
-
-
-
-
-
-
         <script>
 
 
@@ -103,12 +92,13 @@
             var result = document.getElementById("searchTxt").value;
             if (d == result){
                 timer="Nice 😊";
-                document.getElementById('end1').innerHTML = timer;
+                document.getElementById('end1').innerHTML = '<span style="color:green;">' + timer + '</span>';
             }
             else {
                 timer="Incorrect ❌:  " + d;
-                document.getElementById('end2').innerHTML = timer;
+                document.getElementById('end1').innerHTML = '<span style="color:red;">' + timer + '</span>';
             }
+            
             
         }
 
