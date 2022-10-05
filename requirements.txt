@@ -1,0 +1,2 @@
+# my-lair > requirements.txt
+flask==2.0.1
